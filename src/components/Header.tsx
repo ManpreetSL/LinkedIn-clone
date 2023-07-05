@@ -1,9 +1,13 @@
 import SearchIcon from '@mui/icons-material/Search';
-import './Header.css';
+import HomeIcon from '@mui/icons-material/Home';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import ChatIcon from '@mui/icons-material/Chat';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import './Header.scss';
+import HeaderOption from './HeaderOption';
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <div className='header'>
       <div className='header__left'>
@@ -14,7 +18,13 @@ const Header = (props: Props) => {
           <input type='text' name='' id='' />
         </div>
       </div>
-      <div className='header__right'></div>
+      <div className='header__right'>
+        <HeaderOption Icon={HomeIcon} title='Home' />
+        <HeaderOption Icon={SupervisorAccountIcon} title='My network' />
+        <HeaderOption Icon={BusinessCenterIcon} title='Jobs' />
+        <HeaderOption Icon={ChatIcon} title='Messages' />
+        <HeaderOption Icon={NotificationsIcon} title='Notifications' />
+      </div>
     </div>
   );
 };
