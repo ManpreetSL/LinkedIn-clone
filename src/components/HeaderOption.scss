@@ -14,5 +14,11 @@
   :hover {
     color: #000;
   }
+
+  &__icon {
+    object-fit: contain;
+    width: 25px !important;
+    height: 25px !important;
+  }
 }
 
